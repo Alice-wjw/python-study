@@ -1,0 +1,14 @@
+[
+    {
+    "name":"张三",
+    "age":18,
+    "math_score":90,
+    "chinese_score":85
+    },
+    {
+    "name":"李四",
+    "age":19,
+    "math_score":78,
+    "chinese_score":82
+    }
+]
