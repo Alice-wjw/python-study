@@ -113,7 +113,7 @@ print(reshaped)
 reshaped=arr.reshape(-1,4)
 print(reshaped)
 #若个数不对应会抛出valueerror
-
+#聚合部分跳了一下
 a=np.array([1,2])
 b=np.array([3,4])
 print(np.vstack((a,b)))
