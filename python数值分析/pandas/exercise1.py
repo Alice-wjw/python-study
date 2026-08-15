@@ -34,4 +34,16 @@ print(s.sort_values(ascending=False))
 
 print(s.sort_index())
 
+s = pd.Series([1, 2, 2, 3, 3, 3])
+
+print("唯一值：", s.unique())
+print("唯一值个数：", s.nunique())
+
+print("\n删除重复值：")
+print(s.drop_duplicates())
+
+s = pd.Series(["苹果", "香蕉", "苹果", "橙子", "苹果"])
+
+print("统计每个元素出现次数：")
+print(s.value_counts())
 
