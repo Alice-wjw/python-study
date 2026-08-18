@@ -47,3 +47,4 @@ s = pd.Series(["苹果", "香蕉", "苹果", "橙子", "苹果"])
 print("统计每个元素出现次数：")
 print(s.value_counts())
 
+print('今天在学docker，docker是一个操作系统级别的环境控制，可以更好的解决电脑间的环境问题')
