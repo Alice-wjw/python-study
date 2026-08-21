@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 vall=[10,20,30,40,50]
 s1=pd.Series(vall)
 print(s1)
@@ -35,6 +36,7 @@ print(s.sort_values(ascending=False))
 print(s.sort_index())
 
 s = pd.Series([1, 2, 2, 3, 3, 3])
+print(s.sort_values(ascending=False))  
 
 print("唯一值：", s.unique())
 print("唯一值个数：", s.nunique())
@@ -49,3 +51,19 @@ print(s.value_counts())
 
 print('今天在学docker，docker是一个操作系统级别的环境控制，可以更好的解决电脑间的环境问题')
 print('今天在休息')
+
+data=[['张三',20,'男',98],['李四',12,'女',78]]
+df=pd.DataFrame(data,columns=['姓名','年龄','性别','成绩'])
+
+print(df.iloc[0])
+
+s=pd.Series([1,2,2,3,4,4,4])
+print(s.unique())
+
+
+s=pd.Series([10,np.nan,30,np.nan,50])
+print(s.isna())
+print(s.dropna())
+print(s.fillna(0)) 
+
+
