@@ -13,7 +13,6 @@ print('最亮像素值：',np.max(s))
 print('最暗像素值：',np.min(s))
 # 2. 完成图像像素筛选：
 # - 找出所有高亮像素（>200）
-print(s>200)
 print('高亮元素',s[s>200])
 # - 统计高亮像素数量
 print(s[s>200].size)
@@ -37,6 +36,7 @@ print(s.T[b])
 print(np.sort(s,axis=None))
 # - 输出最亮的5个像素
 print(np.sort(s,axis=None)[:-6:-1])
+
 # 提示：
 # np.sort()
 # np.argmax()
