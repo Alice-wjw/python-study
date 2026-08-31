@@ -96,8 +96,10 @@ print(result)
 
 #时间类型开始是object，要转化为datetime
 s=pd.Series(['2025-01-01',
-'2025-02-15',
+'2025-02-15    ',
 '2024-01-30'])
 print(s.dtype)
 s=pd.to_datetime(s)
 print(s)
+
+

@@ -3,8 +3,8 @@ import numpy as np
 # x=np.arange(10)
 # y=x**2
 
-# plt.rcParams['font.sans-serif']=['Microsoft Yahei']
-# plt.rcParams['axes.unicode_minus']=False
+plt.rcParams['font.sans-serif']=['Microsoft Yahei']
+plt.rcParams['axes.unicode_minus']=False
 ###
 # plt.plot(x,y,color='r',linestyle='--')
 # plt.title('基础图',fontsize=12)
