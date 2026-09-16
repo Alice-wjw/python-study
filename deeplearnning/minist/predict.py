@@ -1,11 +1,11 @@
 import os,sys,torch
 sys.path.insert(0,os.path.dirname(__file__))
-from data.loader import get_dataloaders
-from model.net import MNISTNet
+from data.loader import get_data
+from model.net import FashionMLP
 SAVE_PATH='checkpoints/model.pth'
 
 def load_model(path):
-    model=MNISTNet()
+    model=FashionMLP()
     model.load_state_dict(torch.load(path,weights_only=True))
     model.eval()
     return model
@@ -15,11 +15,10 @@ def predict(model,images):
 def main():
     if not os.path.exists(SAVE_PATH):
         print(f'未找到模型权重文件{SAVE_PATH}')
-        return
 
     model=load_model(SAVE_PATH)
     print('已加载')
-    _,test_loader=get_dataloaders(batch_size=64)
+    _,test_loader=get_data(batch_size=64)
     imgs,true_ibls=next(iter(test_loader))
 
     preds=predict(model,imgs[:5])
